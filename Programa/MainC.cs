@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Programa
 {
-    class Program
+    class MainC
     {
         static void Main(string[] args)
         {
+            Suma suma = new Suma();
+            suma.calcular(3,4);
+            suma.mostrar();
+            Console.ReadKey();
         }
     }
 }

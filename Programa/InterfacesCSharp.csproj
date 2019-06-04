@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Division.cs" />
     <Compile Include="IOperacion.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MainC.cs" />
+    <Compile Include="Multiplicacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resta.cs" />
     <Compile Include="Suma.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,27 +7,26 @@ using System.Threading.Tasks;
 
 namespace Programa
 {
-    class Suma : IOperacion //Aqui estoy implementando herencia
+    class Multiplicacion :IOperacion
     {
         private double resultado = 0;
 
         private ArrayList resultadosArrayList = new ArrayList();
 
-        //Metodos que se deben implementar OBLIGATORIAMENTE
         public void calcular(double numero1, double numero2)
         {
-            resultado = numero1 + numero2;
+            resultado = numero1 * numero2;
         }
 
         public void mostrar()
         {
-            Console.WriteLine("El resultado de la suma es {0}" , resultado);
+            Console.WriteLine("El resultado de la multiplicacion es {0}", resultado);
             resultadosArrayList.Add(resultado);
         }
 
         public void MuestraResultados()
         {
-            foreach(double resultado in resultadosArrayList)
+            foreach (double resultado in resultadosArrayList)
                 Console.WriteLine(resultado);
         }
     }
